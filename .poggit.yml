@@ -1,0 +1,45 @@
+--- # Poggit-CI Manifest. Open the CI at projects:
+branches:
+- "5.6"
+projects:
+  contracts:
+    type: library
+    model: virion
+    path: src/Illuminate/Contracts
+    libs:
+      - src: JackNoordhuis/container/container
+        version: 1.0.0
+      - src: JackNoordhuis/simple-cache/simple-cache
+        version: 1.0.0
+  container:
+    type: library
+    model: virion
+    path: src/Illuminate/Container
+    libs:
+      - src: JackNoordhuis/framework/contracts
+        version: 5.6.5
+      - src: JackNoordhuis/container/container
+        version: 1.0.0
+  support:
+    type: library
+    model: virion
+    path: src/Illuminate/Support
+    libs:
+      - src: JackNoordhuis/inflector/inflector
+        version: 1.3.0
+      - src: JackNoordhuis/framework/contracts
+        version: 5.6.5
+      - src: JackNoordhuis/Carbon/Carbon
+        version: 1.22.1
+  database:
+    type: library
+    model: virion
+    path: src/Illuminate/Database
+    libs:
+      - src: JackNoordhuis/framework/container
+        version: 5.6.5
+      - src: JackNoordhuis/framework/contracts
+        version: 5.6.5
+      - src: JackNoordhuis/framework/support
+        version: 5.6.5
+...
