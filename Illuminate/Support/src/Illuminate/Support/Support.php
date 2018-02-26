@@ -18,7 +18,7 @@ class Support
     public static function init()
     {
         if(!static::$initialized) {
-            if(file_exists($file = __DIR__ . "helpers.php")) {
+            if(file_exists($file = __DIR__ . DIRECTORY_SEPARATOR . "helpers.php")) {
                 require_once $file;
             }
         }
