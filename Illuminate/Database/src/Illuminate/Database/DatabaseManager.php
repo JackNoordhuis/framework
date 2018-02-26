@@ -2,6 +2,7 @@
 
 namespace Illuminate\Database;
 
+use Illuminate\Support\Support;
 use PDO;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
@@ -50,6 +51,8 @@ class DatabaseManager implements ConnectionResolverInterface
      */
     public function __construct($app, ConnectionFactory $factory)
     {
+        Support::init();
+
         $this->app = $app;
         $this->factory = $factory;
     }
