@@ -3,7 +3,6 @@
 namespace Illuminate\Support\Traits;
 
 use Illuminate\Support\Fluent;
-use Illuminate\Contracts\Container\Container;
 
 trait CapsuleManagerTrait
 {
@@ -27,7 +26,7 @@ trait CapsuleManagerTrait
      * @param  \Illuminate\Contracts\Container\Container  $container
      * @return void
      */
-    protected function setupContainer(Container $container)
+    protected function setupContainer($container)
     {
         $this->container = $container;
 
@@ -62,7 +61,7 @@ trait CapsuleManagerTrait
      * @param  \Illuminate\Contracts\Container\Container  $container
      * @return void
      */
-    public function setContainer(Container $container)
+    public function setContainer($container)
     {
         $this->container = $container;
     }
