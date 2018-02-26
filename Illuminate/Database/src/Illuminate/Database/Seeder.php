@@ -85,7 +85,7 @@ abstract class Seeder
      * @param  \Illuminate\Container\Container  $container
      * @return $this
      */
-    public function setContainer(Container $container)
+    public function setContainer($container)
     {
         $this->container = $container;
 

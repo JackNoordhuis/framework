@@ -28,7 +28,7 @@ class ConnectionFactory
      * @param  \Illuminate\Contracts\Container\Container  $container
      * @return void
      */
-    public function __construct(Container $container)
+    public function __construct($container)
     {
         $this->container = $container;
     }
